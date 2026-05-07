@@ -233,7 +233,7 @@ export const LandingPage: React.FC<{ variant?: LandingVariant }> = ({ variant = 
       {/* ── NAV ─────────────────────────────────────── */}
       <nav className="nav" role="navigation">
         <div className="nav__inner">
-          <a href="#" className="nav__brand" aria-label="cuedesk">
+          <a href="/sales" className="nav__brand" aria-label="cuedesk">
             <span className="nav__dot" />
             <span className="nav__wm">cuedesk</span>
           </a>

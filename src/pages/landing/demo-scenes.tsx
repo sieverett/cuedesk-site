@@ -3,7 +3,7 @@
 // Converted from design system's scenes.jsx.
 
 import React from "react";
-import { Easing, animate, clamp, useTime, useSprite, Sprite, Stage } from "./demo-engine";
+import { Easing, animate, useSprite, Sprite, Stage } from "./demo-engine";
 
 const FONT_DISPLAY = "'Inter Tight', 'Inter', system-ui, sans-serif";
 const FONT_SANS = "'Inter', system-ui, sans-serif";
@@ -12,7 +12,6 @@ const SLATE_900 = "#0B0D10";
 const PAPER = "#F8F6F2";
 const FG = "#1A1D24";
 const FG_2 = "rgba(26,29,36,0.65)";
-const FG_3 = "rgba(26,29,36,0.45)";
 const CUE_BLUE = "#3D8BFF";
 const CUE_BLUE_LT = "#7AB0FF";
 const LIVE_RED = "#FF4D4D";

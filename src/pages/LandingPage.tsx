@@ -112,18 +112,20 @@ function RequestModal({ onClose }: { onClose: () => void }) {
     return () => document.removeEventListener("keydown", h);
   }, [onClose]);
 
+  const submitToNetlify = (fields: Record<string, string>) => {
+    const body = new URLSearchParams({ "form-name": "beta-signup", ...fields });
+    fetch("/", { method: "POST", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body: body.toString() })
+      .catch(() => {}); // fire-and-forget — don't block UX on network failure
+  };
+
   const handleEmail = () => {
     if (!email.includes("@")) return;
-    // TODO: POST to /api/beta-signup
-    localStorage.setItem("cuedesk_beta_email", email);
-    console.log("[beta-signup] email:", email);
+    submitToNetlify({ email });
     setStep(2);
   };
 
   const handleQualify = () => {
-    const data = { email, role, volume, stack: Array.from(stack) };
-    localStorage.setItem("cuedesk_beta_qualify", JSON.stringify(data));
-    console.log("[beta-signup] qualify:", data);
+    submitToNetlify({ email, role: role || "", volume: volume || "", stack: Array.from(stack).join(", ") });
     setStep(3);
   };
 

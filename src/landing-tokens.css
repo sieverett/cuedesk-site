@@ -1,0 +1,281 @@
+/* ============================================================
+   CueDesk Design Tokens
+   Colors + Type as CSS variables. Import this anywhere.
+   ============================================================ */
+
+/* Fonts loaded via public/index.html — Inter, Inter Tight, JetBrains Mono */
+
+:root {
+  /* ---------- COLOR ---------- */
+
+  /* Slate base — the brand monochrome. Use these 90% of the time. */
+  --slate-0:  #FFFFFF;
+  --slate-50: #F8F6F2;     /* paper-warm light bg */
+  --slate-100:#EFECE6;
+  --slate-200:#DCD7CD;
+  --slate-300:#B8B3A8;
+  --slate-400:#807A6F;
+  --slate-500:#5C5750;
+  --slate-600:#3F3B35;
+  --slate-700:#26241F;
+  --slate-800:#181613;
+  --slate-900:#0B0D10;     /* primary dark bg */
+  --slate-950:#06070A;
+
+  /* Cue Blue — the single signal accent. Reserve for: cues, CTAs, links, focus. */
+  --cue-50:  #EAF2FF;
+  --cue-100: #CFE0FF;
+  --cue-200: #A8C7FF;
+  --cue-300: #7AB0FF;
+  --cue-400: #5599FF;
+  --cue-500: #3D8BFF;      /* core */
+  --cue-600: #2D72E6;
+  --cue-700: #1E5BD6;
+  --cue-800: #1647AE;
+  --cue-900: #0F3382;
+
+  /* Live Red — reserved. Recording dot, destructive, disclosure banner. */
+  --live-300: #FF8A8A;
+  --live-500: #FF4D4D;
+  --live-700: #D62828;
+
+  /* Semantic surface tokens — DARK theme (the in-call HUD + marketing dark). */
+  --bg:           var(--slate-900);
+  --bg-raised:    rgba(255, 255, 255, 0.04);
+  --bg-glass:     rgba(11, 13, 16, 0.78);
+  --bg-modal:     rgba(11, 13, 16, 0.95);
+
+  --fg:           #ECEAE4;        /* primary text on dark — never pure white */
+  --fg-2:         rgba(236, 234, 228, 0.72);
+  --fg-3:         rgba(236, 234, 228, 0.48);
+  --fg-4:         rgba(236, 234, 228, 0.30);
+
+  --border:       rgba(255, 255, 255, 0.08);
+  --border-strong:rgba(255, 255, 255, 0.16);
+
+  --accent:       var(--cue-500);
+  --accent-soft:  rgba(61, 139, 255, 0.12);
+  --accent-fg:    #FFFFFF;
+
+  --live:         var(--live-500);
+
+  /* ---------- ELEVATION ---------- */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 24px 64px rgba(0, 0, 0, 0.18), 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-card-dark: 0 24px 64px rgba(0, 0, 0, 0.45), 0 2px 8px rgba(0, 0, 0, 0.25);
+
+  /* ---------- RADIUS ---------- */
+  --r-xs: 4px;
+  --r-sm: 6px;
+  --r-md: 8px;
+  --r-lg: 10px;
+  --r-xl: 14px;
+  --r-2xl: 20px;
+  --r-pill: 999px;
+
+  /* ---------- SPACING (4px base) ---------- */
+  --s-1:  4px;
+  --s-2:  8px;
+  --s-3:  12px;
+  --s-4:  16px;
+  --s-5:  20px;
+  --s-6:  24px;
+  --s-8:  32px;
+  --s-10: 40px;
+  --s-12: 48px;
+  --s-16: 64px;
+  --s-24: 96px;
+  --s-32: 128px;
+
+  /* ---------- TYPE FAMILIES ----------
+     Body & UI:  Inter
+     Headlines:  Inter Tight (tighter spacing for display)
+     Mono:       JetBrains Mono — used in the live transcript + cue cards
+                                     (intentional: the product LOOKS like a transcript)
+  */
+  --font-sans:    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --font-display: "Inter Tight", "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono:    "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  /* ---------- TYPE TOKENS ---------- */
+  /* Display (Inter Tight, tight tracking, weight 600) */
+  --t-display-xl-size: 88px;
+  --t-display-xl-lh:   0.98;
+  --t-display-xl-trk:  -0.035em;
+
+  --t-display-lg-size: 60px;
+  --t-display-lg-lh:   1.02;
+  --t-display-lg-trk:  -0.03em;
+
+  --t-display-md-size: 44px;
+  --t-display-md-lh:   1.05;
+  --t-display-md-trk:  -0.025em;
+
+  /* Headings (Inter Tight, functional) */
+  --t-h1-size: 38px;  --t-h1-lh: 1.1;  --t-h1-trk: -0.022em;  --t-h1-weight: 600;
+  --t-h2-size: 26px;  --t-h2-lh: 1.2;  --t-h2-trk: -0.018em;  --t-h2-weight: 600;
+  --t-h3-size: 19px;  --t-h3-lh: 1.3;  --t-h3-trk: -0.012em;  --t-h3-weight: 600;
+
+  /* Body */
+  --t-body-lg-size: 18px;  --t-body-lg-lh: 1.55;
+  --t-body-size:    15px;  --t-body-lh:    1.5;
+  --t-body-sm-size: 13px;  --t-body-sm-lh: 1.45;
+
+  /* Caption / eyebrow */
+  --t-caption-size: 11px;
+  --t-caption-lh:   1.3;
+  --t-caption-trk:  0.06em;
+  --t-caption-weight: 500;
+
+  /* Mono */
+  --t-mono-size: 13px;
+  --t-mono-lh:   1.5;
+
+  /* ---------- MOTION ---------- */
+  --ease:        cubic-bezier(0.22, 1, 0.36, 1);   /* default — quint out */
+  --ease-in:     cubic-bezier(0.7, 0, 0.84, 0);
+  --d-fast:      120ms;
+  --d-base:      220ms;
+  --d-slow:      380ms;
+  --d-stage:     600ms;
+}
+
+/* LIGHT theme — paper-warm marketing pages. Wrap with .theme-light. */
+.theme-light {
+  --bg:           var(--slate-50);
+  --bg-raised:    #FFFFFF;
+  --bg-glass:     rgba(248, 246, 242, 0.78);
+  --bg-modal:     #FFFFFF;
+
+  --fg:           #1A1814;
+  --fg-2:         rgba(26, 24, 20, 0.72);
+  --fg-3:         rgba(26, 24, 20, 0.48);
+  --fg-4:         rgba(26, 24, 20, 0.28);
+
+  --border:       rgba(11, 13, 16, 0.08);
+  --border-strong:rgba(11, 13, 16, 0.16);
+
+  --accent:       var(--cue-700);
+  --accent-soft:  rgba(30, 91, 214, 0.08);
+  --accent-fg:    #FFFFFF;
+}
+
+/* ============================================================
+   Semantic type classes — apply to elements directly
+   ============================================================ */
+
+/* Scoped to .theme-light to avoid polluting app styles */
+.theme-light {
+  font-family: var(--font-sans);
+  font-size: var(--t-body-size);
+  line-height: var(--t-body-lh);
+  color: var(--fg);
+  background: var(--bg);
+  font-feature-settings: "ss01", "cv11";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  min-height: 100vh;
+}
+
+.t-display-xl {
+  font-family: var(--font-display);
+  font-size: var(--t-display-xl-size);
+  line-height: var(--t-display-xl-lh);
+  letter-spacing: var(--t-display-xl-trk);
+  font-weight: 600;
+}
+.t-display-lg {
+  font-family: var(--font-display);
+  font-size: var(--t-display-lg-size);
+  line-height: var(--t-display-lg-lh);
+  letter-spacing: var(--t-display-lg-trk);
+  font-weight: 600;
+}
+.t-display-md {
+  font-family: var(--font-display);
+  font-size: var(--t-display-md-size);
+  line-height: var(--t-display-md-lh);
+  letter-spacing: var(--t-display-md-trk);
+  font-weight: 600;
+}
+
+.t-h1 {
+  font-family: var(--font-display);
+  font-size: var(--t-h1-size);
+  line-height: var(--t-h1-lh);
+  letter-spacing: var(--t-h1-trk);
+  font-weight: var(--t-h1-weight);
+}
+.t-h2 {
+  font-family: var(--font-display);
+  font-size: var(--t-h2-size);
+  line-height: var(--t-h2-lh);
+  letter-spacing: var(--t-h2-trk);
+  font-weight: var(--t-h2-weight);
+}
+.t-h3 {
+  font-family: var(--font-display);
+  font-size: var(--t-h3-size);
+  line-height: var(--t-h3-lh);
+  letter-spacing: var(--t-h3-trk);
+  font-weight: var(--t-h3-weight);
+}
+
+.t-body-lg { font-size: var(--t-body-lg-size); line-height: var(--t-body-lg-lh); }
+.t-body    { font-size: var(--t-body-size);    line-height: var(--t-body-lh); }
+.t-body-sm { font-size: var(--t-body-sm-size); line-height: var(--t-body-sm-lh); color: var(--fg-2); }
+
+.t-caption {
+  font-size: var(--t-caption-size);
+  line-height: var(--t-caption-lh);
+  letter-spacing: var(--t-caption-trk);
+  font-weight: var(--t-caption-weight);
+  text-transform: uppercase;
+  color: var(--fg-3);
+}
+
+.t-mono {
+  font-family: var(--font-mono);
+  font-size: var(--t-mono-size);
+  line-height: var(--t-mono-lh);
+}
+
+/* ============================================================
+   Reusable atoms
+   ============================================================ */
+
+/* The brand live dot — pulsing red. Use as <span class="live-dot" /> */
+.live-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--live);
+  box-shadow: 0 0 0 0 rgba(255, 77, 77, 0.55);
+  animation: cd-live-pulse 1.4s var(--ease) infinite;
+  vertical-align: middle;
+}
+@keyframes cd-live-pulse {
+  0%   { box-shadow: 0 0 0 0 rgba(255, 77, 77, 0.55); }
+  70%  { box-shadow: 0 0 0 8px rgba(255, 77, 77, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 77, 77, 0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .live-dot { animation: none; }
+}
+
+/* The brand cue stripe — 2px cue-blue accent on the left of a card */
+.cue-stripe {
+  position: relative;
+}
+.cue-stripe::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: var(--accent);
+  border-radius: 1px;
+}

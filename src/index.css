@@ -1,0 +1,27 @@
+@import "./theme.css";
+
+body {
+  margin: 0;
+  font-family: "Inter", "Söhne", system-ui, -apple-system, BlinkMacSystemFont,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--color-surface);
+  color: var(--color-text-primary);
+  letter-spacing: -0.01em;
+}
+
+@keyframes snippet-in {
+  from {
+    opacity: 0;
+    transform: translateX(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.snippet-enter {
+  animation: snippet-in var(--duration-slow) var(--ease-standard);
+}

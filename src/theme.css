@@ -1,0 +1,61 @@
+/**
+ * cuedesk design tokens — webapp (light theme).
+ * Wired into Tailwind via tailwind.config.js so utility classes
+ * like `bg-surface`, `text-ink`, `border-border` reference these vars.
+ */
+
+:root {
+  /* Ink & neutrals */
+  --color-ink: #1A1814;
+  --color-ink-soft: #2A2A2A;
+
+  /* Surfaces */
+  --color-surface: #FFFFFF;
+  --color-surface-raised: #FAFAFA;
+  --color-surface-sunken: #F4F4F4;
+
+  /* Borders */
+  --color-border: #E8E8E8;
+  --color-border-strong: #D4D4D4;
+
+  /* Text */
+  --color-text-primary: #1A1814;
+  --color-text-secondary: #5C5C5C;
+  --color-text-tertiary: #8A8A8A;
+  --color-text-inverse: #FFFFFF;
+
+  /* Accent — cue blue */
+  --color-accent: #3D8BFF;
+  --color-accent-hover: #2D72E6;
+  --color-accent-soft: rgba(61, 139, 255, 0.08);
+
+  /* Semantic */
+  --color-success: #0A8754;
+  --color-warning: #B8860B;
+  --color-danger: #FF4D4D;
+  --color-info: #3D8BFF;
+
+  /* Topic palette — muted, harmonious with neutral palette */
+  --color-topic-1: #B7C9B1;
+  --color-topic-2: #A8BDD4;
+  --color-topic-3: #D4C5A0;
+  --color-topic-4: #C4A88A;
+  --color-topic-5: #A8B0B8;
+  --color-topic-6: #B5BFA0;
+  --color-topic-7: #C9B8D0;
+  --color-topic-8: #B0C4C4;
+
+  /* Comment accent — warm amber for manager comment left rule */
+  --color-comment-accent: #C4A050;
+
+  /* Type — design system fonts */
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --font-display: "Inter Tight", "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  /* Motion — quint out */
+  --ease-standard: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-fast: 120ms;
+  --duration-default: 220ms;
+  --duration-slow: 380ms;
+}

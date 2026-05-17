@@ -1,6 +1,6 @@
 {
-  "short_name": "CueDesk",
-  "name": "CueDesk",
+  "short_name": "cuedesk",
+  "name": "cuedesk",
   "icons": [
     {
       "src": "cuedesk-favicon.svg",

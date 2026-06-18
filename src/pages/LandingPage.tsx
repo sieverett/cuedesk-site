@@ -58,7 +58,7 @@ function LiveDemo() {
         <span className="livedemo__dot" />
         <span className="livedemo__live">Live</span>
         <span className="livedemo__meta">discovery · acme corp</span>
-        <span className="livedemo__ts">{mm}:{ss}</span>
+        <span className="livedemo__ts">{`${mm}:${ss}`}</span>
       </div>
       <div className="livedemo__body">
         <div className="livedemo__transcript">

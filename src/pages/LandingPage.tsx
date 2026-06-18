@@ -34,6 +34,10 @@ const LOOP = 11500;
 function LiveDemo() {
   const [tick, setTick] = useState(0);
   useEffect(() => {
+    // react-snap prerenders with "ReactSnap" in the UA. Skip the animation during
+    // prerender so the snapshot is the tick=0 state — which matches the client's first
+    // render and avoids a hydration mismatch. The animation runs normally after hydrate.
+    if (typeof navigator !== "undefined" && /ReactSnap/i.test(navigator.userAgent)) return;
     const id = setInterval(() => setTick(t => (t + 100) % LOOP), 100);
     return () => clearInterval(id);
   }, []);

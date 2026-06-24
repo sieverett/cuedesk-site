@@ -365,7 +365,7 @@ export const LandingPage: React.FC<{ variant?: LandingVariant }> = ({ variant = 
 
           <div className="disclosure">
             <h3 className="disclosure__h">SOC 2 is in progress.</h3>
-            <p>We're a beta product, and we're not going to pretend otherwise. SOC 2 Type I is targeted for Q3. If you need a security review before piloting, email <a href="mailto:security@cuedesk.com">security@cuedesk.com</a> and we'll send the current posture doc.</p>
+            <p>We're a beta product, and we're not going to pretend otherwise. SOC 2 Type I is targeted for Q3. If you need a security review before piloting, email <a href="mailto:security@wingscript.com">security@wingscript.com</a> and we'll send the current posture doc.</p>
           </div>
         </div>
       </section>
@@ -416,9 +416,9 @@ export const LandingPage: React.FC<{ variant?: LandingVariant }> = ({ variant = 
           </div>
           <div className="footer__links">
             <a href="/privacy">privacy</a>
-            <a href="mailto:security@cuedesk.com">security</a>
-            <a href="mailto:hello@cuedesk.com">contact</a>
-            <a href="mailto:legal@cuedesk.com">terms</a>
+            <a href="mailto:security@wingscript.com">security</a>
+            <a href="mailto:hello@wingscript.com">contact</a>
+            <a href="mailto:legal@wingscript.com">terms</a>
           </div>
         </div>
         <div className="footer__copy">{`© ${new Date().getFullYear()} wingscript, inc.`}</div>

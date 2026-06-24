@@ -5,11 +5,11 @@
 import React from "react";
 import { Easing, animate, useSprite, Sprite, Stage } from "./demo-engine";
 
-const FONT_DISPLAY = "'Inter Tight', 'Inter', system-ui, sans-serif";
-const FONT_SANS = "'Inter', system-ui, sans-serif";
-const FONT_MONO = "'JetBrains Mono', ui-monospace, monospace";
-const CUE_500 = "#3D8BFF";
-const CUE_300 = "#7AB0FF";
+const FONT_DISPLAY = "'Space Grotesk', 'Manrope', system-ui, sans-serif";
+const FONT_SANS = "'Manrope', system-ui, sans-serif";
+const FONT_MONO = "'Space Mono', ui-monospace, monospace";
+const CUE_500 = "#5400D1";
+const CUE_300 = "#A974EC";
 const LIVE = "#FF4D4D";
 const PAPER = "#ECEAE4";
 const SLATE_900 = "#0B0D10";
@@ -74,7 +74,7 @@ function SceneTitle() {
   return (
     <div style={{
       position: "absolute", inset: 0,
-      background: "radial-gradient(ellipse at 78% 18%, rgba(61,139,255,0.18) 0%, transparent 55%), radial-gradient(ellipse at 20% 85%, rgba(61,139,255,0.06) 0%, transparent 60%), #0B0D10",
+      background: "radial-gradient(ellipse at 78% 18%, rgba(84, 0, 209, 0.18) 0%, transparent 55%), radial-gradient(ellipse at 20% 85%, rgba(84, 0, 209, 0.06) 0%, transparent 60%), #0B0D10",
       display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center",
       gap: 28, opacity: exit,
     }}>
@@ -123,17 +123,17 @@ function ScenePersona() {
     }}>
       <div>
         <div style={{ ...eyebrowSt, fontSize: 11, fontWeight: 700, letterSpacing: "0.20em",
-          textTransform: "uppercase", color: "#1E5BD6", marginBottom: 20,
+          textTransform: "uppercase", color: "#33007D", marginBottom: 20,
           display: "inline-flex", alignItems: "center", gap: 10 }}>
-          <span style={{ width: 24, height: 1, background: "#1E5BD6" }}/> Before the call
+          <span style={{ width: 24, height: 1, background: "#33007D" }}/> Before the call
         </div>
         <h2 style={{ ...h2St, fontFamily: FONT_DISPLAY, fontSize: 72, lineHeight: 0.98,
           letterSpacing: "-0.035em", fontWeight: 600, margin: "0 0 28px", color: "#1A1814" }}>
-          Knows the room<br/><span style={{ backgroundImage: "linear-gradient(transparent 70%, rgba(61,139,255,0.30) 70%)" }}>before you join.</span>
+          Knows the room<br/><span style={{ backgroundImage: "linear-gradient(transparent 70%, rgba(84, 0, 209, 0.30) 70%)" }}>before you join.</span>
         </h2>
         <p style={{ ...subSt, fontSize: 18, lineHeight: 1.55, color: "rgba(26,24,20,0.65)",
           maxWidth: 440, margin: "0 0 28px" }}>
-          cuedesk reads their LinkedIn, your CRM, and your last conversation — and hands you a briefing the moment your meeting opens.
+          wingscript reads their LinkedIn, your CRM, and your last conversation — and hands you a briefing the moment your meeting opens.
         </p>
         <div style={{ ...subSt, display: "flex", flexWrap: "wrap", gap: 8 }}>
           {["linkedin", "hubspot · salesforce", "your last call", "acme.com · changelog"].map(c => (
@@ -152,7 +152,7 @@ function ScenePersona() {
           fontFamily: FONT_SANS, overflow: "hidden",
         }}>
           <div style={{ display: "flex", alignItems: "center", gap: 12, padding: "12px 16px",
-            borderBottom: "1px solid rgba(255,255,255,0.06)", background: "rgba(61,139,255,0.06)" }}>
+            borderBottom: "1px solid rgba(255,255,255,0.06)", background: "rgba(84, 0, 209, 0.06)" }}>
             <span style={{ width: 8, height: 8, borderRadius: "50%", background: LIVE }}/>
             <span style={{ fontSize: 10, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase", color: CUE_300 }}>pre-call</span>
             <span style={{ fontSize: 12.5, color: "rgba(236,234,228,0.72)" }}>acme discovery · in 4 min</span>
@@ -225,7 +225,7 @@ function SceneCue() {
   return (
     <div style={{
       position: "absolute", inset: 0, opacity: exit,
-      background: "radial-gradient(ellipse at 25% 30%, rgba(255,255,255,0.10) 0%, transparent 50%), linear-gradient(135deg, #3D8BFF 0%, #1E5BD6 100%)",
+      background: "radial-gradient(ellipse at 25% 30%, rgba(255,255,255,0.10) 0%, transparent 50%), linear-gradient(135deg, #5400D1 0%, #33007D 100%)",
       display: "grid", gridTemplateColumns: "1.05fr 1fr", gap: 56, padding: "80px 96px", alignItems: "center",
     }}>
       <div style={{ color: "#fff" }}>
@@ -239,7 +239,7 @@ function SceneCue() {
           The answer.<br/>Before they<br/>finish asking.
         </h2>
         <p style={{ ...subSt, fontSize: 18, lineHeight: 1.55, color: "rgba(255,255,255,0.82)", maxWidth: 460, margin: 0 }}>
-          The prospect asks. cuedesk has already searched your CRM, your playbooks, and the open web — and put the answer on screen. In 400&nbsp;ms.
+          The prospect asks. wingscript has already searched your CRM, your playbooks, and the open web — and put the answer on screen. In 400&nbsp;ms.
         </p>
       </div>
 
@@ -291,7 +291,7 @@ function SceneCue() {
             </div>
             <div style={{ padding: "4px 16px 16px", display: "flex", flexDirection: "column", gap: 10 }}>
               <div style={{
-                position: "relative", background: "rgba(61,139,255,0.10)", border: "1px solid rgba(61,139,255,0.30)",
+                position: "relative", background: "rgba(84, 0, 209, 0.10)", border: "1px solid rgba(84, 0, 209, 0.30)",
                 borderRadius: 10, padding: "14px 18px 14px 20px", opacity: cueOp, transform: `translateY(${cueTy}px)`,
               }}>
                 <span style={{ position: "absolute", left: 0, top: 10, bottom: 10, width: 2, background: CUE_500, borderRadius: 1 }}/>
@@ -348,7 +348,7 @@ function SceneGoals() {
   return (
     <div style={{
       position: "absolute", inset: 0, opacity: exit,
-      background: "radial-gradient(ellipse at 78% 18%, rgba(61,139,255,0.18) 0%, transparent 55%), radial-gradient(ellipse at 20% 85%, rgba(61,139,255,0.06) 0%, transparent 60%), #0B0D10",
+      background: "radial-gradient(ellipse at 78% 18%, rgba(84, 0, 209, 0.18) 0%, transparent 55%), radial-gradient(ellipse at 20% 85%, rgba(84, 0, 209, 0.06) 0%, transparent 60%), #0B0D10",
       display: "grid", gridTemplateColumns: "1fr 1.05fr", gap: 56, padding: "60px 96px", alignItems: "center",
       color: PAPER,
     }}>
@@ -363,7 +363,7 @@ function SceneGoals() {
           Every goal,<br/><span style={{ color: CUE_300 }}>checked off</span><br/>as you talk.
         </h2>
         <p style={{ ...subSt, fontSize: 18, lineHeight: 1.55, color: "rgba(236,234,228,0.65)", maxWidth: 460, margin: "0 0 18px" }}>
-          You set your goals before the call. cuedesk listens for the moment each one lands — and quietly ticks the box, with the evidence right there.
+          You set your goals before the call. wingscript listens for the moment each one lands — and quietly ticks the box, with the evidence right there.
         </p>
         <div style={{ ...statSt, maxWidth: 420 }}>
           <div style={{ display: "flex", justifyContent: "space-between", fontFamily: FONT_MONO, fontSize: 12, color: "rgba(236,234,228,0.55)", marginBottom: 8 }}>
@@ -441,7 +441,7 @@ function Checkbox({ checked, progress }: { checked: boolean; progress: number })
       border: `1.5px solid ${checked ? CUE_500 : "rgba(236,234,228,0.30)"}`,
       transition: "background 180ms, border-color 180ms",
       display: "flex", alignItems: "center", justifyContent: "center",
-      boxShadow: checked ? "0 0 0 3px rgba(61,139,255,0.18)" : "none",
+      boxShadow: checked ? "0 0 0 3px rgba(84, 0, 209, 0.18)" : "none",
     }}>
       {checked && (
         <svg width="14" height="14" viewBox="0 0 18 18" fill="none">
@@ -494,7 +494,7 @@ function SceneClose() {
             background: CUE_500, color: "#fff",
             fontFamily: FONT_DISPLAY, fontWeight: 600, fontSize: 17,
             letterSpacing: "-0.012em", whiteSpace: "nowrap",
-            boxShadow: "0 12px 28px rgba(61,139,255,0.32)",
+            boxShadow: "0 12px 28px rgba(84, 0, 209, 0.32)",
             textDecoration: "none",
           }}
         >

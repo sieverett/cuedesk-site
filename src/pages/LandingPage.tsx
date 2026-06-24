@@ -238,9 +238,9 @@ export const LandingPage: React.FC<{ variant?: LandingVariant }> = ({ variant = 
       {/* ── NAV ─────────────────────────────────────── */}
       <nav className="nav" role="navigation">
         <div className="nav__inner">
-          <a href="/sales" className="nav__brand" aria-label="cuedesk">
+          <a href="/sales" className="nav__brand" aria-label="wingscript">
             <img src="/cuedesk-mark.svg" alt="" className="nav__icon" />
-            <span className="nav__wm">cuedesk</span>
+            <span className="nav__wm">wingscript</span>
           </a>
           <a href="#who" className="nav__link">for sales teams</a>
           <a href="https://chromewebstore.google.com/detail/cuedesk/hgekagfaoojilnelfgalkbocbeimfphb" className="btn btn--primary" target="_blank" rel="noopener noreferrer">
@@ -259,7 +259,7 @@ export const LandingPage: React.FC<{ variant?: LandingVariant }> = ({ variant = 
               <span>Live.</span>
             </h1>
             <p className="hero__sub">
-              cuedesk listens to your sales calls and feeds you the answer
+              wingscript listens to your sales calls and feeds you the answer
               before the silence gets awkward.
             </p>
           </div>
@@ -282,7 +282,7 @@ export const LandingPage: React.FC<{ variant?: LandingVariant }> = ({ variant = 
           <div className="prose">
             <p>The prospect asks a question you should know the answer to. A pricing detail buried in a doc you read three weeks ago. A competitor comparison you reviewed in onboarding. A reference customer in their industry that you swear exists somewhere in the CRM.</p>
             <p>You have two seconds. You can stall — "great question, let me come back to that" — and lose momentum. You can guess and risk being wrong. Or you can be the AE who somehow always has the answer ready, and watch the call shift.</p>
-            <p>cuedesk is how you become that AE. It's not magic. It's just your own knowledge — your CRM, your playbooks, your call history, plus Claude — surfacing the right thing at the right second.</p>
+            <p>wingscript is how you become that AE. It's not magic. It's just your own knowledge — your CRM, your playbooks, your call history, plus Claude — surfacing the right thing at the right second.</p>
           </div>
         </div>
       </section>
@@ -304,7 +304,7 @@ export const LandingPage: React.FC<{ variant?: LandingVariant }> = ({ variant = 
                 <span /><span /><span /><span /><span /><span /><span /><span /><span /><span /><span /><span />
               </div>
               <h3 className="how__h">Listens</h3>
-              <p className="how__p">cuedesk runs in the background during your call. Audio stays on your machine. Transcription is live.</p>
+              <p className="how__p">wingscript runs in the background during your call. Audio stays on your machine. Transcription is live.</p>
             </div>
             <div className="how__frame">
               <div className="how__viz how__viz--think">
@@ -312,7 +312,7 @@ export const LandingPage: React.FC<{ variant?: LandingVariant }> = ({ variant = 
                   <circle cx="20" cy="40" r="4" fill="currentColor" />
                   <circle cx="60" cy="20" r="4" fill="currentColor" />
                   <circle cx="60" cy="60" r="4" fill="currentColor" />
-                  <circle cx="100" cy="40" r="4" fill="#3D8BFF" />
+                  <circle cx="100" cy="40" r="4" fill="#5400D1" />
                   <line x1="20" y1="40" x2="60" y2="20" stroke="currentColor" strokeWidth="1" />
                   <line x1="20" y1="40" x2="60" y2="60" stroke="currentColor" strokeWidth="1" />
                   <line x1="60" y1="20" x2="100" y2="40" stroke="currentColor" strokeWidth="1" />
@@ -339,10 +339,10 @@ export const LandingPage: React.FC<{ variant?: LandingVariant }> = ({ variant = 
       {/* ── WHAT IT'S NOT ───────────────────────────── */}
       <section className="prose-section prose-section--dark">
         <div className="prose-inner">
-          <h2 className="section-h">cuedesk is not a notetaker.</h2>
+          <h2 className="section-h">wingscript is not a notetaker.</h2>
           <div className="prose">
             <p>It's not Gong. It's not Otter. It's not a post-call summarizer or a coaching review tool. Those tools tell you what happened <em>after</em> the call. They're useful. They don't help you on the call.</p>
-            <p>cuedesk runs <em>during</em> the conversation. The cue arrives in the seconds you have to respond, not in the email recap tomorrow. That's the whole point. If we did anything else well, we'd be doing this badly.</p>
+            <p>wingscript runs <em>during</em> the conversation. The cue arrives in the seconds you have to respond, not in the email recap tomorrow. That's the whole point. If we did anything else well, we'd be doing this badly.</p>
           </div>
         </div>
       </section>
@@ -355,12 +355,12 @@ export const LandingPage: React.FC<{ variant?: LandingVariant }> = ({ variant = 
 
           <div className="disclosure">
             <h3 className="disclosure__h">Your audio stays on your machine.</h3>
-            <p>cuedesk transcribes locally. We send the transcript and your context to Claude over an encrypted connection — never the raw audio. Your prospect's voice never leaves your laptop.</p>
+            <p>wingscript transcribes locally. We send the transcript and your context to Claude over an encrypted connection — never the raw audio. Your prospect's voice never leaves your laptop.</p>
           </div>
 
           <div className="disclosure">
             <h3 className="disclosure__h">Disclosed mode is one click.</h3>
-            <p>If your company policy or your sales motion calls for disclosure, cuedesk can show a banner at the top of the call: "This call is being assisted by an AI co-pilot." Some teams prefer it. Some don't. You decide per call.</p>
+            <p>If your company policy or your sales motion calls for disclosure, wingscript can show a banner at the top of the call: "This call is being assisted by an AI co-pilot." Some teams prefer it. Some don't. You decide per call.</p>
           </div>
 
           <div className="disclosure">
@@ -374,7 +374,7 @@ export const LandingPage: React.FC<{ variant?: LandingVariant }> = ({ variant = 
       <section className="prose-section" id="who">
         <div className="prose-inner">
           <h2 className="section-h">Built for AEs who run live calls.</h2>
-          <p className="prose-lead">If you do 5 to 15 live calls a week — discovery, demo, negotiation, renewal — cuedesk earns its keep. If you're an SDR doing 60 cold dials a day, this isn't built for you yet. If you're a CSM running QBRs, we're probably useful but you won't be the first to try it. We're focused.</p>
+          <p className="prose-lead">If you do 5 to 15 live calls a week — discovery, demo, negotiation, renewal — wingscript earns its keep. If you're an SDR doing 60 cold dials a day, this isn't built for you yet. If you're a CSM running QBRs, we're probably useful but you won't be the first to try it. We're focused.</p>
 
           <div className="fit">
             <div className="fit__card">
@@ -383,11 +383,11 @@ export const LandingPage: React.FC<{ variant?: LandingVariant }> = ({ variant = 
             </div>
             <div className="fit__card">
               <div className="fit__lbl">Founder-led sales</div>
-              <p>You're the founder. You're closing the deal. You don't have a coach. cuedesk is the coach.</p>
+              <p>You're the founder. You're closing the deal. You don't have a coach. wingscript is the coach.</p>
             </div>
             <div className="fit__card">
               <div className="fit__lbl">Sales engineers</div>
-              <p>Technical questions mid-call. cuedesk surfaces the doc, the spec, the integration detail.</p>
+              <p>Technical questions mid-call. wingscript surfaces the doc, the spec, the integration detail.</p>
             </div>
           </div>
         </div>
@@ -398,7 +398,7 @@ export const LandingPage: React.FC<{ variant?: LandingVariant }> = ({ variant = 
         <div className="prose-inner">
           <h2 className="section-h">We're not selling this yet.</h2>
           <div className="prose">
-            <p>cuedesk is in invite-only beta. We're onboarding 15 AEs in May at $25/month — not because that's the price, but because free users don't give honest feedback. Public pricing will land after we know what this is worth to the people using it on real calls.</p>
+            <p>wingscript is in invite-only beta. We're onboarding 15 AEs in May at $25/month — not because that's the price, but because free users don't give honest feedback. Public pricing will land after we know what this is worth to the people using it on real calls.</p>
             <p>If you want in, request access. We'll review and respond within 48 hours.</p>
           </div>
           <a href="https://chromewebstore.google.com/detail/cuedesk/hgekagfaoojilnelfgalkbocbeimfphb" className="btn btn--primary btn--lg" style={{ marginTop: 24 }} target="_blank" rel="noopener noreferrer">
@@ -411,7 +411,7 @@ export const LandingPage: React.FC<{ variant?: LandingVariant }> = ({ variant = 
       <footer className="footer">
         <div className="footer__inner">
           <div>
-            <div className="footer__brand"><img src="/cuedesk-mark.svg" alt="" className="footer__icon" /><span>cuedesk</span></div>
+            <div className="footer__brand"><img src="/cuedesk-mark.svg" alt="" className="footer__icon" /><span>wingscript</span></div>
             <p className="footer__line">Live AI co-pilot for sales calls.</p>
           </div>
           <div className="footer__links">
@@ -421,7 +421,7 @@ export const LandingPage: React.FC<{ variant?: LandingVariant }> = ({ variant = 
             <a href="mailto:legal@cuedesk.com">terms</a>
           </div>
         </div>
-        <div className="footer__copy">{`© ${new Date().getFullYear()} cuedesk, inc.`}</div>
+        <div className="footer__copy">{`© ${new Date().getFullYear()} wingscript, inc.`}</div>
       </footer>
 
       {/* ── MODAL ───────────────────────────────────── */}

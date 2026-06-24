@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap");
+
 /* ============================================================
-   CueDesk Design Tokens
+   wingscript Design Tokens
    Colors + Type as CSS variables. Import this anywhere.
    ============================================================ */
 
-/* Fonts loaded via public/index.html — Inter, Inter Tight, JetBrains Mono */
+/* Fonts loaded via public/index.html — Space Grotesk, Manrope, Space Mono */
 
 :root {
   /* ---------- COLOR ---------- */
@@ -22,17 +24,17 @@
   --slate-900:#0B0D10;     /* primary dark bg */
   --slate-950:#06070A;
 
-  /* Cue Blue — the single signal accent. Reserve for: cues, CTAs, links, focus. */
-  --cue-50:  #EAF2FF;
-  --cue-100: #CFE0FF;
-  --cue-200: #A8C7FF;
-  --cue-300: #7AB0FF;
-  --cue-400: #5599FF;
-  --cue-500: #3D8BFF;      /* core */
-  --cue-600: #2D72E6;
-  --cue-700: #1E5BD6;
-  --cue-800: #1647AE;
-  --cue-900: #0F3382;
+  /* Wing Violet — the single signal accent. Reserve for: cues, CTAs, links, focus. */
+  --cue-50:  #F5EFFE;
+  --cue-100: #E7D8FB;
+  --cue-200: #C9A8F4;
+  --cue-300: #A974EC;
+  --cue-400: #7E3AE0;
+  --cue-500: #5400D1;      /* core */
+  --cue-600: #4400A6;
+  --cue-700: #33007D;
+  --cue-800: #260060;
+  --cue-900: #1C0048;
 
   /* Live Red — reserved. Recording dot, destructive, disclosure banner. */
   --live-300: #FF8A8A;
@@ -54,7 +56,7 @@
   --border-strong:rgba(255, 255, 255, 0.16);
 
   --accent:       var(--cue-500);
-  --accent-soft:  rgba(61, 139, 255, 0.12);
+  --accent-soft:  rgba(84, 0, 209, 0.12);
   --accent-fg:    #FFFFFF;
 
   --live:         var(--live-500);
@@ -89,17 +91,17 @@
   --s-32: 128px;
 
   /* ---------- TYPE FAMILIES ----------
-     Body & UI:  Inter
-     Headlines:  Inter Tight (tighter spacing for display)
-     Mono:       JetBrains Mono — used in the live transcript + cue cards
+     Body & UI:  Manrope
+     Headlines:  Space Grotesk (tighter spacing for display)
+     Mono:       Space Mono — used in the live transcript + cue cards
                                      (intentional: the product LOOKS like a transcript)
   */
-  --font-sans:    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
-  --font-display: "Inter Tight", "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-mono:    "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --font-sans:    "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  --font-display: "Space Grotesk", "Manrope", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono:    "Space Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
 
   /* ---------- TYPE TOKENS ---------- */
-  /* Display (Inter Tight, tight tracking, weight 600) */
+  /* Display (Space Grotesk, tight tracking, weight 600) */
   --t-display-xl-size: 88px;
   --t-display-xl-lh:   0.98;
   --t-display-xl-trk:  -0.035em;
@@ -112,7 +114,7 @@
   --t-display-md-lh:   1.05;
   --t-display-md-trk:  -0.025em;
 
-  /* Headings (Inter Tight, functional) */
+  /* Headings (Space Grotesk, functional) */
   --t-h1-size: 38px;  --t-h1-lh: 1.1;  --t-h1-trk: -0.022em;  --t-h1-weight: 600;
   --t-h2-size: 26px;  --t-h2-lh: 1.2;  --t-h2-trk: -0.018em;  --t-h2-weight: 600;
   --t-h3-size: 19px;  --t-h3-lh: 1.3;  --t-h3-trk: -0.012em;  --t-h3-weight: 600;
@@ -157,7 +159,7 @@
   --border-strong:rgba(11, 13, 16, 0.16);
 
   --accent:       var(--cue-700);
-  --accent-soft:  rgba(30, 91, 214, 0.08);
+  --accent-soft:  rgba(51, 0, 125, 0.08);
   --accent-fg:    #FFFFFF;
 }
 

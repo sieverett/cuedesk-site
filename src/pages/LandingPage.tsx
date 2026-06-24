@@ -239,7 +239,7 @@ export const LandingPage: React.FC<{ variant?: LandingVariant }> = ({ variant = 
       <nav className="nav" role="navigation">
         <div className="nav__inner">
           <a href="/sales" className="nav__brand" aria-label="wingscript">
-            <img src="/cuedesk-mark.svg" alt="" className="nav__icon" />
+            <img src="/cuedesk-mark.svg?v=ws1" alt="" className="nav__icon" />
             <span className="nav__wm">wingscript</span>
           </a>
           <a href="#who" className="nav__link">for sales teams</a>
@@ -411,7 +411,7 @@ export const LandingPage: React.FC<{ variant?: LandingVariant }> = ({ variant = 
       <footer className="footer">
         <div className="footer__inner">
           <div>
-            <div className="footer__brand"><img src="/cuedesk-mark.svg" alt="" className="footer__icon" /><span>wingscript</span></div>
+            <div className="footer__brand"><img src="/cuedesk-mark.svg?v=ws1" alt="" className="footer__icon" /><span>wingscript</span></div>
             <p className="footer__line">Live AI co-pilot for sales calls.</p>
           </div>
           <div className="footer__links">
